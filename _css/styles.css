@@ -10,31 +10,43 @@ h1 {
     text-align: center;
 }
 
-@keyframes timer {
+@keyframes greenTimer {
     0% {background-color: rgba(30, 131, 0, 1);}
     50% {background-color: rgba(30, 131, 0, 0.85);}
     100% {background-color: rgba(30, 131, 0, 0.3);}
+}
+
+@keyframes yellowTimer {
+    0% {background-color: rgba(187, 156, 24, 1);}
+    50% {background-color: rgba(187, 156, 24, 0.85);}
+    100% {background-color: rgba(3187, 156, 24, 0.3);}
+}
+
+@keyframes redTimer {
+    0% {background-color: rgba(168, 34, 10, 1);}
+    50% {background-color: rgba(168, 34, 10, 0.85);}
+    100% {background-color: rgba(168, 34, 10, 0.3);}
 }
 
 .timer {
     width: 300px;
     height: 300px;
     margin: 50px auto;
-    border: 2px solid #666;
+    border: 2.5px solid #666;
     border-radius: 50%;
-    background: rgb(30, 131, 0);
+    background: none;
     font-family: 'Oswald', sans-serif;
-    animation-name: timer;
+    animation-name: none;
     animation-duration: 1s;
     animation-timing-function: ease-out;
-    animation-iteration-count: 5;
+    animation-iteration-count: infinite;;
 }
 
 .phaseHeader {
     text-align: center;
     width: 30%;
     margin: 69px auto 5px;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .timeRemaining {
@@ -61,7 +73,8 @@ h1 {
 .activitySettings,
 .breakSettings {
     float: left;
-    margin-top: 20px
+    margin-top: 20px;
+    color: #aaa;
 }
 
 .activitySettings {
@@ -75,18 +88,18 @@ h1 {
 .activityHeader,
 .breakHeader {
     text-align: center;
-    font-size: 18px
+    font-size: 15px;
 }
 
 .activityTime,
 .breakTime {
     text-align: center;
-    font-size: 30px;
-    margin: 10px auto 0;
+    font-size: 32px;
+    margin: 5px auto 0;
     width: 50px;
     background: inherit;
     border: none;
-    color: inherit;;
+    color: #fff;
     font-family: inherit;
 }
 
@@ -95,17 +108,17 @@ h1 {
     text-align: center;
     font-size: 14px;
     width: 50px;
-    margin: 0 auto 10px;
+    margin: 0 auto 8px;
 }
 
 button {
-    background: #fff;
-    border-style: none;
-    border-width: 0;
-    color: #000;
+    background: inherit;
+    border: 0.5px outset #666;
+    color: inherit;
     box-sizing: inherit;
     border-color: none;
     margin: 0;
+    text-align: center;
 }
 
 .decrement_activity,
